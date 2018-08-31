@@ -15,6 +15,7 @@ public class PropertyType{
     protected Date createdOn;
     protected Date updatedOn;
 
+    @Column(name="PROPERTY_TYPE_ID")
     public Long getId() {
         return id;
     }
@@ -23,6 +24,7 @@ public class PropertyType{
         this.id = id;
     }
 
+    @Column(name="PROPERTY_DATA_TYPE")
     public String getPropertyDataType() {
         return propertyDataType;
     }
@@ -31,6 +33,7 @@ public class PropertyType{
         this.propertyDataType = propertyDataType;
     }
 
+    @Column(name="DESCRIPTION")
     public String getDescription() {
         return description;
     }
@@ -39,6 +42,7 @@ public class PropertyType{
         this.description = description;
     }
 
+    @Column(name="CREATED_ON")
     public Date getCreatedOn() {
         return createdOn;
     }
@@ -47,6 +51,7 @@ public class PropertyType{
         this.createdOn = createdOn;
     }
 
+    @Column(name="UPDATED_ON")
     public Date getUpdatedOn() {
         return updatedOn;
     }
