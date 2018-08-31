@@ -16,6 +16,8 @@ public class SuiteProduct {
     protected Date createdOn;
     protected Date updatedOn;
 
+    @Column(name="SUITE_PRODUCT_ID")
+    @Id
     public Long getId() {
         return id;
     }
@@ -24,6 +26,7 @@ public class SuiteProduct {
         this.id = id;
     }
 
+    @Column(name="PRODUCT_NAME")
     public String getSuiteProductName() {
         return suiteProductName;
     }
@@ -32,6 +35,7 @@ public class SuiteProduct {
         this.suiteProductName = suiteProductName;
     }
 
+    @Column(name="DISPLAY_NAME")
     public String getDisplayName() {
         return displayName;
     }
@@ -40,6 +44,7 @@ public class SuiteProduct {
         this.displayName = displayName;
     }
 
+    @Column(name="DESCRIPTION")
     public String getDescription() {
         return description;
     }
@@ -48,6 +53,7 @@ public class SuiteProduct {
         this.description = description;
     }
 
+    @Column(name="CREATED_ON")
     public Date getCreatedOn() {
         return createdOn;
     }
@@ -56,6 +62,7 @@ public class SuiteProduct {
         this.createdOn = createdOn;
     }
 
+    @Column(name="UPDATED_ON")
     public Date getUpdatedOn() {
         return updatedOn;
     }
