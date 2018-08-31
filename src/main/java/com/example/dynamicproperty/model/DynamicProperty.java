@@ -23,6 +23,8 @@ public class DynamicProperty {
     protected Date createdOn;
     protected Date updatedOn;
 
+    @Column(name="PROPERTY_ID")
+    @Id
     public Long getId() {
         return id;
     }
@@ -31,6 +33,7 @@ public class DynamicProperty {
         this.id = id;
     }
 
+    @Column(name="PROPERTY_NAME")
     public String getPropertyName() {
         return propertyName;
     }
@@ -39,6 +42,7 @@ public class DynamicProperty {
         this.propertyName = propertyName;
     }
 
+    @Column(name="DESCRIPTION")
     public String getDescription() {
         return description;
     }
@@ -47,6 +51,7 @@ public class DynamicProperty {
         this.description = description;
     }
 
+    @Column(name="DEFAULT_VALUE")
     public String getPropertyDefaultValue() {
         return propertyDefaultValue;
     }
@@ -55,6 +60,7 @@ public class DynamicProperty {
         this.propertyDefaultValue = propertyDefaultValue;
     }
 
+    @Column(name="VALUE")
     public String getPropertyValue() {
         return propertyValue;
     }
@@ -63,6 +69,7 @@ public class DynamicProperty {
         this.propertyValue = propertyValue;
     }
 
+    @Column(name="MODIFY")
     public Boolean getModify() {
         return modify;
     }
@@ -70,6 +77,7 @@ public class DynamicProperty {
     public void setModify(Boolean modify) {
         this.modify = modify;
     }
+
 
     public PropertyCategory getPropertyCategory() {
         return propertyCategory;
@@ -95,6 +103,7 @@ public class DynamicProperty {
         this.suiteProduct = suiteProduct;
     }
 
+    @Column(name="CREATED_ON")
     public Date getCreatedOn() {
         return createdOn;
     }
@@ -103,9 +112,11 @@ public class DynamicProperty {
         this.createdOn = createdOn;
     }
 
+    @Column(name="UPDATED_ON")
     public Date getUpdatedOn() {
         return updatedOn;
     }
+
 
     public void setUpdatedOn(Date updatedOn) {
         this.updatedOn = updatedOn;
