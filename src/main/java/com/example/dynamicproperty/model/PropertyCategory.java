@@ -17,6 +17,7 @@ public class PropertyCategory {
     protected Date createdOn;
     protected Date updatedOn;
 
+    @Column(name="PROPERTY_CATEGORY_ID")
     public Long getId() {
         return id;
     }
@@ -25,6 +26,7 @@ public class PropertyCategory {
         this.id = id;
     }
 
+    @Column(name="PROPERTY_CATEGORY_NAME")
     public String getPropertyCategory() {
         return propertyCategory;
     }
@@ -33,6 +35,7 @@ public class PropertyCategory {
         this.propertyCategory = propertyCategory;
     }
 
+    @Column(name="DISPLAY_NAME")
     public String getDisplayName() {
         return displayName;
     }
@@ -41,6 +44,7 @@ public class PropertyCategory {
         this.displayName = displayName;
     }
 
+    @Column(name="DESCRIPTION")
     public String getDescription() {
         return description;
     }
@@ -49,6 +53,7 @@ public class PropertyCategory {
         this.description = description;
     }
 
+    @Column(name="CREATED_ON")
     public Date getCreatedOn() {
         return createdOn;
     }
@@ -57,6 +62,7 @@ public class PropertyCategory {
         this.createdOn = createdOn;
     }
 
+    @Column(name="UPDATED_ON")
     public Date getUpdatedOn() {
         return updatedOn;
     }
