@@ -7,7 +7,7 @@
 				<tableExists tableName="csa_ucmdb_sync_state"/>
 			</not>
 		</preConditions>
-		<createTable tableName="csa_ucmdb_sync_state">
+		<createTable tableName="db_property_sequence">
 			<column name="uuid" type="VARCHAR(255)">
 				<constraints nullable="false" primaryKey="true"/>
 			</column>
