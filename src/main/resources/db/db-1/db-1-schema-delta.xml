@@ -8,11 +8,65 @@
 			</not>
 		</preConditions>
 		<createTable tableName="db_property_sequence">
-			<column name="uuid" type="VARCHAR(255)">
+			<column name="property_category_id" type="VARCHAR(255)">
 				<constraints nullable="false" primaryKey="true"/>
 			</column>
+			<column name="property_category_name" type="VARCHAR(255)"/>
+			<column name="display_name" type="VARCHAR(255)"/>
+			<column name="description" type="VARCHAR(2000)"/>
 			<column name="created_on" type="TIMESTAMP"/>
 			<column name="updated_on" type="TIMESTAMP"/>
 		</createTable>
+	</changeSet>
+		<changeSet author="dbp" id="db10-2">
+		<preConditions onFail="CONTINUE" onFailMessage="Continuing past : changeset not applicable">
+			<not>
+				<tableExists tableName="csa_ucmdb_sync_state"/>
+			</not>
+		</preConditions>
+		<createTable tableName="db_property_sequence">
+			<column name="property_category_id" type="VARCHAR(255)">
+				<constraints nullable="false" primaryKey="true"/>
+			</column>
+			<column name="property_category_name" type="VARCHAR(255)"/>
+			<column name="display_name" type="VARCHAR(255)"/>
+			<column name="description" type="VARCHAR(2000)"/>
+			<column name="created_on" type="TIMESTAMP"/>
+			<column name="updated_on" type="TIMESTAMP"/>
+		</createTable>
+	</changeSet>
+		<changeSet author="dbp" id="db10-3">
+		<preConditions onFail="CONTINUE" onFailMessage="Continuing past : changeset not applicable">
+			<not>
+				<tableExists tableName="csa_ucmdb_sync_state"/>
+			</not>
+		</preConditions>
+		<createTable tableName="db_property_sequence">
+			<column name="property_category_id" type="VARCHAR(255)">
+				<constraints nullable="false" primaryKey="true"/>
+			</column>
+			<column name="property_category_name" type="VARCHAR(255)"/>
+			<column name="display_name" type="VARCHAR(255)"/>
+			<column name="description" type="VARCHAR(2000)"/>
+			<column name="created_on" type="TIMESTAMP"/>
+			<column name="updated_on" type="TIMESTAMP"/>
+		</createTable>
+	<changeSet author="dbp" id="db10-4">
+		<preConditions onFail="CONTINUE" onFailMessage="Continuing past : changeset not applicable">
+			<not>
+				<tableExists tableName="csa_ucmdb_sync_state"/>
+			</not>
+		</preConditions>
+		<createTable tableName="db_property_sequence">
+			<column name="property_category_id" type="VARCHAR(255)">
+				<constraints nullable="false" primaryKey="true"/>
+			</column>
+			<column name="property_category_name" type="VARCHAR(255)"/>
+			<column name="display_name" type="VARCHAR(255)"/>
+			<column name="description" type="VARCHAR(2000)"/>
+			<column name="created_on" type="TIMESTAMP"/>
+			<column name="updated_on" type="TIMESTAMP"/>
+		</createTable>
+	</changeSet>
 	</changeSet>
 </databaseChangeLog>
