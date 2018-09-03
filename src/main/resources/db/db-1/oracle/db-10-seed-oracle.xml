@@ -1,1 +1,22 @@
 Todo
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+    <changeSet dbms="oracle" author="CSA" id="db_property_category">
+        <sqlFile splitStatements="false" stripComments="true" path="db/db-1/oracle/db_property_category.sql"/>
+    </changeSet>
+    <changeSet dbms="oracle" author="CSA" id="db_property_type">
+        <sqlFile splitStatements="false" stripComments="true" path="db/db-1/oracle/db_property_type.sql"/>
+    </changeSet>
+    <changeSet dbms="oracle" author="CSA" id="db_suite_product">
+        <sqlFile splitStatements="false" stripComments="true" path="db/db-1/oracle/db_suite_product.sql"/>
+    </changeSet>
+    <changeSet dbms="oracle" author="CSA" id="db_dynamic_property">
+        <sqlFile splitStatements="false" stripComments="true" path="db/db-1/oracle/db_dynamic_property.sql"/>
+    </changeSet>
+
+</databaseChangeLog>
