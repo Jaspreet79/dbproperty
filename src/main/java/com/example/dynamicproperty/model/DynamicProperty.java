@@ -79,6 +79,8 @@ public class DynamicProperty {
     }
 
 
+    @ManyToOne
+    @JoinColumn(name ="PROPERTY_CATEGORY_ID")
     public PropertyCategory getPropertyCategory() {
         return propertyCategory;
     }
@@ -87,6 +89,8 @@ public class DynamicProperty {
         this.propertyCategory = propertyCategory;
     }
 
+    @ManyToOne
+    @JoinColumn(name="PROPERTY_TYPE_ID")
     public PropertyType getPropertyType() {
         return propertyType;
     }
@@ -95,6 +99,8 @@ public class DynamicProperty {
         this.propertyType = propertyType;
     }
 
+    @ManyToOne
+    @JoinColumn(name="SUITE_PRODUCT_ID")
     public SuiteProduct getSuiteProduct() {
         return suiteProduct;
     }
@@ -116,7 +122,6 @@ public class DynamicProperty {
     public Date getUpdatedOn() {
         return updatedOn;
     }
-
 
     public void setUpdatedOn(Date updatedOn) {
         this.updatedOn = updatedOn;
