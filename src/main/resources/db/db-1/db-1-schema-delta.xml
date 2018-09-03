@@ -41,7 +41,7 @@
 			</not>
 		</preConditions>
 		<createTable tableName="db_property_category">
-			<column name="property_category_id" type="INT)">
+			<column name="property_category_id" type="INT">
 				<constraints nullable="false" primaryKey="true"/>
 			</column>
 			<column name="property_category_name" type="VARCHAR(255)"/>
