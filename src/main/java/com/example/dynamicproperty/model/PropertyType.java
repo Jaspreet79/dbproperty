@@ -4,18 +4,18 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name="DB_PROPERTY_TYPE")
-public class PropertyType{
-    @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "db_property_Sequence")
-    @SequenceGenerator(name = "db_property_Sequence", sequenceName = "DB_PROPERTY_SEQUENCE")
+@Table(name = "DB_PROPERTY_TYPE")
+public class PropertyType {
+
     protected Long id;
     protected String propertyDataType;
     protected String description;
     protected Date createdOn;
     protected Date updatedOn;
 
-    @Column(name="PROPERTY_TYPE_ID")
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "PROPERTY_TYPE_ID")
     public Long getId() {
         return id;
     }
@@ -24,7 +24,7 @@ public class PropertyType{
         this.id = id;
     }
 
-    @Column(name="PROPERTY_DATA_TYPE")
+    @Column(name = "PROPERTY_DATA_TYPE")
     public String getPropertyDataType() {
         return propertyDataType;
     }
@@ -33,7 +33,7 @@ public class PropertyType{
         this.propertyDataType = propertyDataType;
     }
 
-    @Column(name="DESCRIPTION")
+    @Column(name = "DESCRIPTION")
     public String getDescription() {
         return description;
     }
@@ -42,7 +42,7 @@ public class PropertyType{
         this.description = description;
     }
 
-    @Column(name="CREATED_ON")
+    @Column(name = "CREATED_ON")
     public Date getCreatedOn() {
         return createdOn;
     }
@@ -51,7 +51,7 @@ public class PropertyType{
         this.createdOn = createdOn;
     }
 
-    @Column(name="UPDATED_ON")
+    @Column(name = "UPDATED_ON")
     public Date getUpdatedOn() {
         return updatedOn;
     }
