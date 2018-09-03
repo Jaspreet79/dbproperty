@@ -4,11 +4,9 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table (name="DB_SUITE_PRODUCT")
+@Table(name = "DB_SUITE_PRODUCT")
 public class SuiteProduct {
-    @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "db_property_Sequence")
-    @SequenceGenerator(name = "db_property_Sequence", sequenceName = "DB_PROPERTY_SEQUENCE")
+
     protected Long id;
     protected String suiteProductName;
     protected String displayName;
@@ -16,8 +14,9 @@ public class SuiteProduct {
     protected Date createdOn;
     protected Date updatedOn;
 
-    @Column(name="SUITE_PRODUCT_ID")
     @Id
+    @Column(name = "SUITE_PRODUCT_ID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {
         return id;
     }
@@ -26,7 +25,7 @@ public class SuiteProduct {
         this.id = id;
     }
 
-    @Column(name="PRODUCT_NAME")
+    @Column(name = "PRODUCT_NAME", nullable = false)
     public String getSuiteProductName() {
         return suiteProductName;
     }
@@ -35,7 +34,7 @@ public class SuiteProduct {
         this.suiteProductName = suiteProductName;
     }
 
-    @Column(name="DISPLAY_NAME")
+    @Column(name = "DISPLAY_NAME", nullable = false)
     public String getDisplayName() {
         return displayName;
     }
@@ -44,7 +43,7 @@ public class SuiteProduct {
         this.displayName = displayName;
     }
 
-    @Column(name="DESCRIPTION")
+    @Column(name = "DESCRIPTION")
     public String getDescription() {
         return description;
     }
@@ -53,7 +52,7 @@ public class SuiteProduct {
         this.description = description;
     }
 
-    @Column(name="CREATED_ON")
+    @Column(name = "CREATED_ON")
     public Date getCreatedOn() {
         return createdOn;
     }
@@ -62,7 +61,7 @@ public class SuiteProduct {
         this.createdOn = createdOn;
     }
 
-    @Column(name="UPDATED_ON")
+    @Column(name = "UPDATED_ON")
     public Date getUpdatedOn() {
         return updatedOn;
     }
