@@ -8,7 +8,7 @@
 			</not>
 		</preConditions>
 		<createTable tableName="db_suite_product">
-			<column name="suite_product_id" type="VARCHAR(255)">
+			<column name="suite_product_id" type="INT">
 				<constraints nullable="false" primaryKey="true"/>
 			</column>
 			<column name="product_name" type="VARCHAR(255)"/>
@@ -25,7 +25,7 @@
 			</not>
 		</preConditions>
 		<createTable tableName="db_property_type">
-			<column name="property_type_id" type="VARCHAR(255)">
+			<column name="property_type_id" type="INT">
 				<constraints nullable="false" primaryKey="true"/>
 			</column>
 			<column name="property_data_type" type="VARCHAR(255)"/>
@@ -41,7 +41,7 @@
 			</not>
 		</preConditions>
 		<createTable tableName="db_property_category">
-			<column name="property_category_id" type="VARCHAR(255)">
+			<column name="property_category_id" type="INT)">
 				<constraints nullable="false" primaryKey="true"/>
 			</column>
 			<column name="property_category_name" type="VARCHAR(255)"/>
@@ -58,11 +58,16 @@
 				</not>
 			</preConditions>
 			<createTable tableName="db_dynamic_property">
-				<column name="property_category_id" type="VARCHAR(255)">
+				<column name="property_id" type="INT">
 					<constraints nullable="false" primaryKey="true"/>
 				</column>
-				<column name="property_category_name" type="VARCHAR(255)"/>
-				<column name="display_name" type="VARCHAR(255)"/>
+				<column name="property_name" type="VARCHAR(255)"/>
+				<column name="default_value" type="VARCHAR(500)"/>
+				<column name="value" type="VARCHAR(500)"/>
+				<column name="modify" type="BOOLEAN"/>
+				<column name="property_category_id" type="INT"/>
+				<column name="property_type_id" type="INT"/>
+				<column name="suite_product_id" type="INT"/>
 				<column name="description" type="VARCHAR(2000)"/>
 				<column name="created_on" type="TIMESTAMP"/>
 				<column name="updated_on" type="TIMESTAMP"/>
