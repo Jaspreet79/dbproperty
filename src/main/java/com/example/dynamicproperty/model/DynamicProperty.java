@@ -7,11 +7,8 @@ import java.util.Date;
 @Table(name = "DB_DYNAMIC_PROPERTY")
 public class DynamicProperty {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "db_property_Sequence")
-    @SequenceGenerator(name = "db_property_Sequence", sequenceName = "DB_PROPERTY_SEQUENCE")
-    protected Long id;
 
+    protected Long id;
     protected String propertyName;
     protected String description;
     protected String propertyDefaultValue;
@@ -23,8 +20,9 @@ public class DynamicProperty {
     protected Date createdOn;
     protected Date updatedOn;
 
-    @Column(name="PROPERTY_ID")
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "PROPERTY_ID")
     public Long getId() {
         return id;
     }
@@ -33,7 +31,7 @@ public class DynamicProperty {
         this.id = id;
     }
 
-    @Column(name="PROPERTY_NAME")
+    @Column(name = "PROPERTY_NAME")
     public String getPropertyName() {
         return propertyName;
     }
@@ -42,7 +40,7 @@ public class DynamicProperty {
         this.propertyName = propertyName;
     }
 
-    @Column(name="DESCRIPTION")
+    @Column(name = "DESCRIPTION")
     public String getDescription() {
         return description;
     }
@@ -51,7 +49,7 @@ public class DynamicProperty {
         this.description = description;
     }
 
-    @Column(name="DEFAULT_VALUE")
+    @Column(name = "DEFAULT_VALUE")
     public String getPropertyDefaultValue() {
         return propertyDefaultValue;
     }
@@ -60,7 +58,7 @@ public class DynamicProperty {
         this.propertyDefaultValue = propertyDefaultValue;
     }
 
-    @Column(name="VALUE")
+    @Column(name = "VALUE")
     public String getPropertyValue() {
         return propertyValue;
     }
@@ -69,7 +67,7 @@ public class DynamicProperty {
         this.propertyValue = propertyValue;
     }
 
-    @Column(name="MODIFY")
+    @Column(name = "MODIFY")
     public Boolean getModify() {
         return modify;
     }
@@ -80,7 +78,7 @@ public class DynamicProperty {
 
 
     @ManyToOne
-    @JoinColumn(name ="PROPERTY_CATEGORY_ID")
+    @JoinColumn(name = "PROPERTY_CATEGORY_ID")
     public PropertyCategory getPropertyCategory() {
         return propertyCategory;
     }
@@ -90,7 +88,7 @@ public class DynamicProperty {
     }
 
     @ManyToOne
-    @JoinColumn(name="PROPERTY_TYPE_ID")
+    @JoinColumn(name = "PROPERTY_TYPE_ID")
     public PropertyType getPropertyType() {
         return propertyType;
     }
@@ -100,7 +98,7 @@ public class DynamicProperty {
     }
 
     @ManyToOne
-    @JoinColumn(name="SUITE_PRODUCT_ID")
+    @JoinColumn(name = "SUITE_PRODUCT_ID")
     public SuiteProduct getSuiteProduct() {
         return suiteProduct;
     }
@@ -109,7 +107,7 @@ public class DynamicProperty {
         this.suiteProduct = suiteProduct;
     }
 
-    @Column(name="CREATED_ON")
+    @Column(name = "CREATED_ON")
     public Date getCreatedOn() {
         return createdOn;
     }
@@ -118,7 +116,7 @@ public class DynamicProperty {
         this.createdOn = createdOn;
     }
 
-    @Column(name="UPDATED_ON")
+    @Column(name = "UPDATED_ON")
     public Date getUpdatedOn() {
         return updatedOn;
     }
