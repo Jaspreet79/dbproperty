@@ -4,7 +4,7 @@ BEGIN
 
 ---------------------------Supported Property Category Types---------------
 
-select count(*) into l_count FROM property_category_name where property_category_id = 1 AND property_category_name='OO';
+select count(*) into l_count FROM db_property_category where property_category_id = 1 AND property_category_name='CSA';
 
 IF (l_count = 0 ) THEN
     Insert into db_property_type
