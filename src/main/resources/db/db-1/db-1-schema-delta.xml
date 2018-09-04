@@ -84,13 +84,13 @@
     </changeSet>
     <changeSet author="dbp" id="db10-6">
         <addForeignKeyConstraint baseColumnNames="property_type_id" baseTableName="db_dynamic_property"
-                                 constraintName="fk_property_category_id" deferrable="false" initiallyDeferred="false"
+                                 constraintName="fk_property_type_id" deferrable="false" initiallyDeferred="false"
                                  onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="property_type_id"
                                  referencedTableName="db_property_type"/>
     </changeSet>
     <changeSet author="dbp" id="db10-7">
         <addForeignKeyConstraint baseColumnNames="suite_product_id" baseTableName="db_dynamic_property"
-                                 constraintName="fk_property_category_id" deferrable="false" initiallyDeferred="false"
+                                 constraintName="fk_suite_product_id" deferrable="false" initiallyDeferred="false"
                                  onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="suite_product_id"
                                  referencedTableName="db_suite_product"/>
     </changeSet>
