@@ -67,7 +67,7 @@
             <column name="property_name" type="VARCHAR(255)"/>
             <column name="default_value" type="VARCHAR(500)"/>
             <column name="value" type="VARCHAR(500)"/>
-            <column name="modify" type="BOOLEAN"/>
+            <column name="modifiable" type="BOOLEAN"/>
             <column name="property_category_id" type="INT"/>
             <column name="property_type_id" type="INT"/>
             <column name="suite_product_id" type="INT"/>
