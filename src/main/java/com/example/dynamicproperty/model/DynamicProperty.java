@@ -13,7 +13,7 @@ public class DynamicProperty {
     protected String description;
     protected String propertyDefaultValue;
     protected String propertyValue;
-    protected Boolean modify;
+    protected Boolean modifiable;
     protected PropertyCategory propertyCategory;
     protected PropertyType propertyType;
     protected SuiteProduct suiteProduct;
@@ -67,15 +67,14 @@ public class DynamicProperty {
         this.propertyValue = propertyValue;
     }
 
-    @Column(name = "MODIFY")
-    public Boolean getModify() {
-        return modify;
+    @Column(name = "MODIFIABLE")
+    public Boolean getModifiable() {
+        return modifiable;
     }
 
-    public void setModify(Boolean modify) {
-        this.modify = modify;
+    public void setModifiable(Boolean modify) {
+        this.modifiable = modify;
     }
-
 
     @ManyToOne
     @JoinColumn(name = "PROPERTY_CATEGORY_ID")
