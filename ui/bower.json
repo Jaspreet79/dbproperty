@@ -1,0 +1,52 @@
+{
+  "name": "dbproperty-ui",
+  "authors": [
+    "chhayas@microfocus.com"
+  ],
+  "description": "",
+  "main": [
+    "dist/css/main.css",
+    "dist/dbproperty-ui-ui.js"
+  ],
+  "keywords": [],
+  "license": "HPE",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "karma.conf.js",
+    "jshint-config.json",
+    "test"
+  ],
+  "dependencies": {
+    "mocha": "^3.2.0",
+    "chai": "^3.5.0",
+    "angular-translate": "2.15.1",
+    "angular-translate-loader-static-files": "2.15.1",
+    "angular-translate-loader-partial": "2.15.1",
+    "angular-bootstrap": "2.5.0",
+    "hcm-ui-core": "https://github.houston.softwaregrp.net/HCM/hcm-ui-core.git#develop",
+    "angular-ui-select": "0.19.4",
+    "es6-shim": "v0.35.3"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    },
+    "angular": {
+      "dependencies": {
+        "jquery": "3.2.1"
+      }
+    }
+  },
+  "resolutions": {
+    "angular": ">=1.6.4",
+    "jquery": ">=3.2.1",
+    "angular-sanitize": ">=1.6.4"
+  }
+}
