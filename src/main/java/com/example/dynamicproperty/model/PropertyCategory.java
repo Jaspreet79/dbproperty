@@ -13,6 +13,7 @@ public class PropertyCategory {
     protected String description;
     protected Date createdOn;
     protected Date updatedOn;
+    protected SuiteProduct suiteProduct;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -50,6 +51,16 @@ public class PropertyCategory {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "SUITE_PRODUCT_ID")
+    public SuiteProduct getSuiteProduct() {
+        return suiteProduct;
+    }
+
+    public void setSuiteProduct(SuiteProduct suiteProduct) {
+        this.suiteProduct = suiteProduct;
     }
 
     @Column(name = "CREATED_ON")

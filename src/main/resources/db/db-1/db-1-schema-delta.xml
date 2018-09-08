@@ -50,6 +50,7 @@
             <column name="property_category_name" type="VARCHAR(255)"/>
             <column name="display_name" type="VARCHAR(255)"/>
             <column name="description" type="VARCHAR(2000)"/>
+            <column name="suite_product_id" type="INT"/>
             <column name="created_on" type="TIMESTAMP"/>
             <column name="updated_on" type="TIMESTAMP"/>
         </createTable>
@@ -70,13 +71,18 @@
             <column name="modifiable" type="BOOLEAN"/>
             <column name="property_category_id" type="INT"/>
             <column name="property_type_id" type="INT"/>
-            <column name="suite_product_id" type="INT"/>
             <column name="description" type="VARCHAR(2000)"/>
             <column name="created_on" type="TIMESTAMP"/>
             <column name="updated_on" type="TIMESTAMP"/>
         </createTable>
     </changeSet>
     <changeSet author="dbp" id="db10-5">
+        <addForeignKeyConstraint baseColumnNames="suite_product_id" baseTableName="db_property_category"
+                                 constraintName="fk_suite_product_id" deferrable="false" initiallyDeferred="false"
+                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="suite_product_id"
+                                 referencedTableName="db_suite_product"/>
+    </changeSet>
+    <changeSet author="dbp" id="db10-6">
         <addForeignKeyConstraint baseColumnNames="property_category_id" baseTableName="db_dynamic_property"
                                  constraintName="fk_property_category_id" deferrable="false" initiallyDeferred="false"
                                  onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="property_category_id"
@@ -87,11 +93,5 @@
                                  constraintName="fk_property_type_id" deferrable="false" initiallyDeferred="false"
                                  onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="property_type_id"
                                  referencedTableName="db_property_type"/>
-    </changeSet>
-    <changeSet author="dbp" id="db10-7">
-        <addForeignKeyConstraint baseColumnNames="suite_product_id" baseTableName="db_dynamic_property"
-                                 constraintName="fk_suite_product_id" deferrable="false" initiallyDeferred="false"
-                                 onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="suite_product_id"
-                                 referencedTableName="db_suite_product"/>
     </changeSet>
 </databaseChangeLog>

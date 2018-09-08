@@ -2,7 +2,6 @@ package com.example.dynamicproperty.vo;
 
 import com.example.dynamicproperty.model.PropertyCategory;
 import com.example.dynamicproperty.model.PropertyType;
-import com.example.dynamicproperty.model.SuiteProduct;
 
 import java.util.Date;
 
@@ -15,7 +14,6 @@ public class DynamicPropertyVO {
     private Boolean modifiable;
     private PropertyCategory propertyCategory;
     private PropertyType propertyType;
-    private SuiteProduct suiteProduct;
     private Date createdOn;
     private Date updatedOn;
 
@@ -82,14 +80,6 @@ public class DynamicPropertyVO {
 
     public void setPropertyType(PropertyType propertyType) {
         this.propertyType = propertyType;
-    }
-
-    public SuiteProduct getSuiteProduct() {
-        return suiteProduct;
-    }
-
-    public void setSuiteProduct(SuiteProduct suiteProduct) {
-        this.suiteProduct = suiteProduct;
     }
 
     public Date getCreatedOn() {

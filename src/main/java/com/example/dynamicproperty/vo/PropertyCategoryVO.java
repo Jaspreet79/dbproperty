@@ -1,6 +1,8 @@
 
 package com.example.dynamicproperty.vo;
 
+import com.example.dynamicproperty.model.SuiteProduct;
+
 import java.util.Date;
 
 public class PropertyCategoryVO {
@@ -10,6 +12,7 @@ public class PropertyCategoryVO {
     private String description;
     private Date createdOn;
     private Date updatedOn;
+    private SuiteProduct suiteProduct;
 
     public Long getId() {
         return id;
@@ -41,6 +44,14 @@ public class PropertyCategoryVO {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public SuiteProduct getSuiteProduct() {
+        return suiteProduct;
+    }
+
+    public void setSuiteProduct(SuiteProduct suiteProduct) {
+        this.suiteProduct = suiteProduct;
     }
 
     public Date getCreatedOn() {

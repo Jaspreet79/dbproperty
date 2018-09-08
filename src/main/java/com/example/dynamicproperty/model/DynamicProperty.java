@@ -16,7 +16,6 @@ public class DynamicProperty {
     protected Boolean modifiable;
     protected PropertyCategory propertyCategory;
     protected PropertyType propertyType;
-    protected SuiteProduct suiteProduct;
     protected Date createdOn;
     protected Date updatedOn;
 
@@ -94,16 +93,6 @@ public class DynamicProperty {
 
     public void setPropertyType(PropertyType propertyType) {
         this.propertyType = propertyType;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "SUITE_PRODUCT_ID")
-    public SuiteProduct getSuiteProduct() {
-        return suiteProduct;
-    }
-
-    public void setSuiteProduct(SuiteProduct suiteProduct) {
-        this.suiteProduct = suiteProduct;
     }
 
     @Column(name = "CREATED_ON")

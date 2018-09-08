@@ -10,9 +10,9 @@ select count(*) into l_count FROM db_property_category where property_category_i
 
 IF (l_count = 0 ) THEN
     Insert into db_property_category
-       (property_category_id, property_category_name,display_name,description, created_on, updated_on)
+       (property_category_id, property_category_name,display_name,description,suite_product_id created_on, updated_on)
     Values
-       (1,'CSA','CLOUD Service Automation','These properties are used for configuration of CSA', CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (1,'CSA','CLOUD Service Automation','These properties are used for configuration of CSA',1, CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
 
 END
