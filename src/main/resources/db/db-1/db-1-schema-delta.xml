@@ -88,7 +88,7 @@
                                  onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="property_category_id"
                                  referencedTableName="db_property_category"/>
     </changeSet>
-    <changeSet author="dbp" id="db10-6">
+    <changeSet author="dbp" id="db10-7">
         <addForeignKeyConstraint baseColumnNames="property_type_id" baseTableName="db_dynamic_property"
                                  constraintName="fk_property_type_id" deferrable="false" initiallyDeferred="false"
                                  onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="property_type_id"

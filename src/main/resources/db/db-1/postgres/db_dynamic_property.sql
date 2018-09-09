@@ -1,10 +1,8 @@
 do
 $body$
-
 DECLARE l_count integer;
-BEGIN
 
---------------------------- Dynamic properties seeded data------------
+BEGIN
 
 select count(*) into l_count FROM db_dynamic_property where property_id = 1 AND property_name='csa.provider.hostname';
 IF (l_count = 0 ) THEN

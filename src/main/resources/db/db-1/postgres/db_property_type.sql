@@ -2,8 +2,7 @@ do
 $body$
 
 DECLARE l_count integer;
----------------------------Supported Data types for Properties---------------
-
+BEGIN
 select count(*) into l_count FROM db_property_type where property_type_id = 1 AND property_data_type='STRING';
 
 IF (l_count = 0 ) THEN

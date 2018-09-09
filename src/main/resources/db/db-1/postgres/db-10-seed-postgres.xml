@@ -5,17 +5,17 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
 
-<changeSet dbms="postgresql" author="dbp" id="db_property_category">
-    <sqlFile splitStatements="false" stripComments="true" path="db/db-1/postgres/db_property_category.sql"/>
-</changeSet>
-<changeSet dbms="postgresql" author="dbp" id="db_property_type">
-    <sqlFile splitStatements="false" stripComments="true" path="db/db-1/postgres/db_property_type.sql"/>
-</changeSet>
-<changeSet dbms="postgresql" author="dbp" id="db_suite_product">
-    <sqlFile splitStatements="false" stripComments="true" path="db/db-1/postgres/db_suite_product.sql"/>
-</changeSet>
-<changeSet dbms="postgresql" author="dbp" id="db_dynamic_property">
-    <sqlFile splitStatements="false" stripComments="true" path="db/db-1/postgres/db_dynamic_property.sql"/>
-</changeSet>
+    <changeSet dbms="postgresql" author="dbp" id="db_suite_product">
+        <sqlFile splitStatements="false" stripComments="true" path="db/db-1/postgres/db_suite_product.sql"/>
+    </changeSet>
+    <changeSet dbms="postgresql" author="dbp" id="db_property_type">
+        <sqlFile splitStatements="false" stripComments="true" path="db/db-1/postgres/db_property_type.sql"/>
+    </changeSet>
+    <changeSet dbms="postgresql" author="dbp" id="db_property_category">
+        <sqlFile splitStatements="false" stripComments="true" path="db/db-1/postgres/db_property_category.sql"/>
+    </changeSet>
+    <changeSet dbms="postgresql" author="dbp" id="db_dynamic_property">
+        <sqlFile splitStatements="false" stripComments="true" path="db/db-1/postgres/db_dynamic_property.sql"/>
+    </changeSet>
 
 </databaseChangeLog>
