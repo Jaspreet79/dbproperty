@@ -6,6 +6,7 @@ import com.example.dynamicproperty.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -17,8 +18,9 @@ public class DBPropertyRest {
     @Autowired
     private PropertyService propertyService;
 
-    @RequestMapping(path = "/hello", produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(path = "/hello", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
     public void getPropertyList() throws Exception {
+
         List<DynamicProperty> dynamicPropertyList = propertyService.getPropertyList();
 
         for (DynamicProperty property : dynamicPropertyList) {
