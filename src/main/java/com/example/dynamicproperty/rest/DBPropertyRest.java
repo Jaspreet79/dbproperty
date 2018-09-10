@@ -19,13 +19,9 @@ public class DBPropertyRest {
     private PropertyService propertyService;
 
     @RequestMapping(path = "/hello", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
-    public void getPropertyList() throws Exception {
+    public  List<DynamicProperty> getPropertyList() throws Exception {
 
         List<DynamicProperty> dynamicPropertyList = propertyService.getPropertyList();
-
-        for (DynamicProperty property : dynamicPropertyList) {
-                System.out.println(property.getPropertyName());
-        }
-
+        return dynamicPropertyList;
     }
 }

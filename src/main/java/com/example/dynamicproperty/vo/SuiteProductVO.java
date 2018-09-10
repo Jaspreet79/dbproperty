@@ -19,7 +19,7 @@ public class SuiteProductVO {
     }
 
     public String getSuiteProductName() {
-        return suiteProductName;
+        return this.suiteProductName;
     }
 
     public void setSuiteProductName(String suiteProductName) {
@@ -27,7 +27,7 @@ public class SuiteProductVO {
     }
 
     public String getDisplayName() {
-        return displayName;
+        return this.displayName;
     }
 
     public void setDisplayName(String displayName) {
@@ -43,7 +43,7 @@ public class SuiteProductVO {
     }
 
     public Date getCreatedOn() {
-        return createdOn;
+        return this.createdOn;
     }
 
     public void setCreatedOn(Date createdOn) {
@@ -51,7 +51,7 @@ public class SuiteProductVO {
     }
 
     public Date getUpdatedOn() {
-        return updatedOn;
+        return this.updatedOn;
     }
 
     public void setUpdatedOn(Date updatedOn) {
