@@ -1,0 +1,18 @@
+
+{
+	
+			"categories": [{
+				"category_id": "1",
+				"product_id":"1",
+				"name": "csa category",
+				"displayName": "CSA",
+				"description": "This will list all the CSA properties"
+			}, {
+				"category_id": "2",
+				"product_id":"1",
+				"name": "oo category",
+				"displayName": "OO",
+				"description": "This will list all the OO properties"
+			}]
+
+}

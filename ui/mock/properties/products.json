@@ -1,0 +1,17 @@
+{
+	
+			"products": [{
+				
+				"product_id":"1",
+				"name": "csaproduct",
+				"displayName": "CSA",
+				"description": "CSA product description"
+			}, {
+				
+				"product_id":"2",
+				"name": "ooproduct",
+				"displayName": "OO",
+				"description": "OO product description"
+			}]
+
+}

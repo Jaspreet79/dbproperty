@@ -1,0 +1,32 @@
+{
+	
+			"properties": [{
+				"category_id": "1",
+				"name": "fileUploadMaxSize",
+				"displayName": "File Upload Max Size",
+				"description": "This will show the limit of file size which can be uploaded during import",
+				"property_type": "INTEGER",
+				"default_value": "50",
+				"value": "90",
+				"restart_required": false			
+			}, {
+				"category_id": "1",
+				"name": "ldapRead",
+				"displayName": "LDAP Read Only",
+				"description": "This will show if the LDAP access point is Read only or not",
+				"property_type": "BOOLEAN",
+				"default_value": true,
+				"value": false,
+				"restart_required": true
+			}, {
+			    "category_id": "2",
+				"name": "lifecycleAction",
+				"displayName": "Life Cycle Action",
+				"description": "This will help in setting the Life Cycle ACtion for the Action Wizard",
+				"property_type": "STRING",
+				"default_value": "/Library/CSA Content Pack",
+				"value": "/Library/Integrations",
+				"restart_required": true
+			}]
+	
+}

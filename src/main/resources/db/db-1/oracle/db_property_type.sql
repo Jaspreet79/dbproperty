@@ -23,7 +23,7 @@ IF (l_count = 0 ) THEN
        (2,'INT','Integer data type',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
 
-select count(*) into l_count FROM db_property_type where property_type_id = 3 AND property_data_type='STRING';
+select count(*) into l_count FROM db_property_type where property_type_id = 3 AND property_data_type='BOOLEAN';
 
 IF (l_count = 0 ) THEN
     Insert into db_property_type
@@ -32,7 +32,7 @@ IF (l_count = 0 ) THEN
        (3,'BOOLEAN','Boolean data type',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
 
-select count(*) into l_count FROM db_property_type where property_type_id = 4 AND property_data_type='STRING';
+select count(*) into l_count FROM db_property_type where property_type_id = 4 AND property_data_type='LIST';
 
 IF (l_count = 0 ) THEN
     Insert into db_property_type
