@@ -20,124 +20,125 @@ IF (l_count = 0 ) THEN
        (2, 'csa.provider.port','8444','8444',1, 1,2,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
 
+
 select count(*) into l_count FROM db_dynamic_property where property_id = 3 AND property_name='csa.proxy.schema';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (3, 'csa.proxy.schema',' ',' ',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (3, 'csa.proxy.schema',' ',' ',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 4 AND property_name='csa.provider.contentType';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (4, 'csa.provider.contentType','TOPSECRET',' ',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (4, 'csa.provider.contentType','TOPSECRET',' ',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 5 AND property_name='csa.provider.agency';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (5, 'csa.provider.agency','','',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (5, 'csa.provider.agency','','',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 6 AND property_name='csa.subscriber.portal.url';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (6, 'csa.subscriber.portal.url','','',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (6, 'csa.subscriber.portal.url','','',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 7 AND property_name='csa.orgName.identifier';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (7, 'csa.orgName.identifier','','',1,1,3,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (7, 'csa.orgName.identifier','','',1,1,3,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 8 AND property_name='csa.orgName.compatibility';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (8, 'csa.orgName.compatibility','','',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (8, 'csa.orgName.compatibility','','',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 9 AND property_name='securityAdminPassword';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (9, 'securityAdminPassword','','',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (9, 'securityAdminPassword','','',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 10 AND property_name='securityCsaReportingUserPassword';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (10, 'securityCsaReportingUserPassword','','',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (10, 'securityCsaReportingUserPassword','','',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 11 AND property_name='securityTransportUserName';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (11, 'securityTransportUserName','csaTransportUser','csaTransportUser',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (11, 'securityTransportUserName','csaTransportUser','csaTransportUser',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 12 AND property_name='securityTransportPassword';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (12, 'securityTransportPassword','ENC(QZHvMeWngfw1oBsvmTQoD92E8vJH0PI+4tG6d+j7WV4=)','ENC(QZHvMeWngfw1oBsvmTQoD92E8vJH0PI+4tG6d+j7WV4=)',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (12, 'securityTransportPassword','ENC(QZHvMeWngfw1oBsvmTQoD92E8vJH0PI+4tG6d+j7WV4=)','ENC(QZHvMeWngfw1oBsvmTQoD92E8vJH0PI+4tG6d+j7WV4=)',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 13 AND property_name='securityOoInboundUserPassword';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (13, 'securityOoInboundUserPassword','ENC(vXovO20FbAVb4lRFAnDayw==)','ENC(vXovO20FbAVb4lRFAnDayw==)',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (13, 'securityOoInboundUserPassword','ENC(vXovO20FbAVb4lRFAnDayw==)','ENC(vXovO20FbAVb4lRFAnDayw==)',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 14 AND property_name='securityCdaInboundUserPassword';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (14, 'securityCdaInboundUserPassword','ENC(8oJoYwmZnSbvaSXVZlmTxDFUn5dLZRxgNh4DU5B87bQ=)','ENC(8oJoYwmZnSbvaSXVZlmTxDFUn5dLZRxgNh4DU5B87bQ=)',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (14, 'securityCdaInboundUserPassword','ENC(8oJoYwmZnSbvaSXVZlmTxDFUn5dLZRxgNh4DU5B87bQ=)','ENC(8oJoYwmZnSbvaSXVZlmTxDFUn5dLZRxgNh4DU5B87bQ=)',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 15 AND property_name='securityIdmTransportUserPassword';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (15, 'securityIdmTransportUserPassword','ENC(8oJoYwmZnSbvaSXVZlmTxDFUn5dLZRxgNh4DU5B87bQ=)','ENC(8oJoYwmZnSbvaSXVZlmTxDFUn5dLZRxgNh4DU5B87bQ=)',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (15, 'securityIdmTransportUserPassword','ENC(8oJoYwmZnSbvaSXVZlmTxDFUn5dLZRxgNh4DU5B87bQ=)','ENC(8oJoYwmZnSbvaSXVZlmTxDFUn5dLZRxgNh4DU5B87bQ=)',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 16 AND property_name='securityCatalogAggregationTransportUserPassword';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (16, 'securityCatalogAggregationTransportUserPassword','ENC(AR3r0wcMNgOVZ/cFv//Y60r1pYQ9BshH/mSb6VSaVj8=)','ENC(AR3r0wcMNgOVZ/cFv//Y60r1pYQ9BshH/mSb6VSaVj8=)',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (16, 'securityCatalogAggregationTransportUserPassword','ENC(AR3r0wcMNgOVZ/cFv//Y60r1pYQ9BshH/mSb6VSaVj8=)','ENC(AR3r0wcMNgOVZ/cFv//Y60r1pYQ9BshH/mSb6VSaVj8=)',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 17 AND property_name='securityCatalogAggregationTransportUserPassword';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (17, 'securityCatalogAggregationTransportUserPassword','ENC(3oKr9eADA7bE53Zk2t9wIA==)','ENC(3oKr9eADA7bE53Zk2t9wIA==)',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (17, 'securityCatalogAggregationTransportUserPassword','ENC(3oKr9eADA7bE53Zk2t9wIA==)','ENC(3oKr9eADA7bE53Zk2t9wIA==)',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 18 AND property_name='securityCodarIntegrationUserPassword';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (18, 'securityCodarIntegrationUserPassword','ENC(V/11m/lcKKpJhZruUhlAWbMr2xQ6ME5uq9jx43hyeOg=)','ENC(V/11m/lcKKpJhZruUhlAWbMr2xQ6ME5uq9jx43hyeOg=)',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (18, 'securityCodarIntegrationUserPassword','ENC(V/11m/lcKKpJhZruUhlAWbMr2xQ6ME5uq9jx43hyeOg=)','ENC(V/11m/lcKKpJhZruUhlAWbMr2xQ6ME5uq9jx43hyeOg=)',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
  select count(*) into l_count FROM db_dynamic_property where property_id = 19 AND property_name='Shared secret used for IDM Integration';
 IF (l_count = 0 ) THEN
     Insert into db_dynamic_property
        (property_id, property_name, default_value, value,modifiable, property_category_id, property_type_id, description, created_on, updated_on)
     Values
-       (19, 'Shared secret used for IDM Integration','ENC(3oKr9eADA7bE53Zk2t9wIA==)','ENC(3oKr9eADA7bE53Zk2t9wIA==)',1,1,1,'provider port',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+       (19, 'Shared secret used for IDM Integration','ENC(3oKr9eADA7bE53Zk2t9wIA==)','ENC(3oKr9eADA7bE53Zk2t9wIA==)',1,1,1,'null',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 END IF;
 
 END;
