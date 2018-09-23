@@ -3,7 +3,7 @@
 
     function PropertyModelFactory( BaseModel) {
         var PropertyModel = function () {
-            _BaseModel.call(this);
+            BaseModel.call(this);
 
             this.restartRequired = true;
             this.name = '';
@@ -44,7 +44,7 @@
             return result;
         };
 
-        BaseModel.extend(_BaseModel, PropertyModel);
+        BaseModel.extend(BaseModel, PropertyModel);
         return PropertyModel;
     }
 
