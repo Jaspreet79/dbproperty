@@ -1,0 +1,24 @@
+{
+    "properties":[
+        {
+            "name":"propertyname1",
+            "displayName":"Property Name",
+            "value":"xyz",
+            "type":"string",
+            "reboot-required":"true"
+        },
+        {
+            "name":"propertyname2",
+            "displayName":"Property Name2",
+            "value":"xyz",
+            "type":"string",
+            "reboot-required":"true"
+        },{
+            "name":"propertyname3",
+            "displayName":"Property Name3",
+            "value":"xyz",
+            "type":"string",
+            "reboot-required":"true"
+        }
+    ]
+}
